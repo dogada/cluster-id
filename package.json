@@ -1,6 +1,6 @@
 {
   "name": "scope-id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Database cluster friendly object id with great query isolation.",
   "main": "index.js",
   "scripts": {
