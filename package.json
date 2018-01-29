@@ -1,5 +1,5 @@
 {
-  "name": "db-scope-id",
+  "name": "cluster-id",
   "version": "1.0.1",
   "description": "Database cluster friendly object id with great query isolation.",
   "main": "index.js",
@@ -7,10 +7,11 @@
     "test": "jest src/",
     "test:watch": "jest --watch src/",
     "prebuild": "rm -rf ./build",
-    "build": "buble src/ -o build/ && cp package.json ./build && echo 'Version: '",
+    "build": "buble src/ -o build/ && cp package.json ./build && echo",
+    "deploy": "npm publish build/",
     "preversion": "npm test",
     "version": "npm run build",
-    "postversion": "git push && git push --tags && npm publish build/"
+    "postversion": "git push && git push --tags && npm run deploy"
   },
   "keywords": [
     "database",
@@ -22,7 +23,7 @@
   "author": "Dmytro V. Dogadailo (https://dogada.org)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dogada/db-scope-id.git"
+    "url": "https://github.com/dogada/cluster-id.git"
   },
   "license": "MIT",
   "devDependencies": {
