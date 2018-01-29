@@ -15,6 +15,10 @@
     "sql"
   ],
   "author": "Dmytro V. Dogadailo (https://dogada.org)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dogada/ScopeId.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "buble": "~0.18.0",
