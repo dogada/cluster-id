@@ -1,11 +1,16 @@
 {
-  "name": "scopeid",
+  "name": "scope-id",
   "version": "1.0.0",
   "description": "Database cluster friendly object id with great query isolation.",
   "main": "index.js",
   "scripts": {
     "test": "jest src/",
-    "test:watch": "jest --watch src/"
+    "test:watch": "jest --watch src/",
+    "prebuild": "rm -rf ./build",
+    "build": "buble src/ -o build/ && cp package.json ./build && echo 'Version: '",
+    "preversion": "npm test",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "keywords": [
     "database",
