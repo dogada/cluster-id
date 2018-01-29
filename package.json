@@ -1,0 +1,26 @@
+{
+  "name": "scopeid",
+  "version": "1.0.0",
+  "description": "Database cluster friendly object id with great query isolation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest src/",
+    "test:watch": "jest --watch src/"
+  },
+  "keywords": [
+    "database",
+    "id",
+    "objectid",
+    "simpleid",
+    "sql"
+  ],
+  "author": "Dmytrro V. Dogadailo (dvd@dogada.org)",
+  "license": "MIT",
+  "devDependencies": {
+    "buble": "~0.18.0",
+    "jest": "~22.1.4"
+  },
+  "dependencies": {
+    "left-pad": "~1.2.0"
+  }
+}
