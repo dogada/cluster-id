@@ -14,7 +14,7 @@
     "simpleid",
     "sql"
   ],
-  "author": "Dmytrro V. Dogadailo (dvd@dogada.org)",
+  "author": "Dmytro V. Dogadailo (https://dogada.org)",
   "license": "MIT",
   "devDependencies": {
     "buble": "~0.18.0",
