@@ -1,6 +1,6 @@
 {
   "name": "cluster-id",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Database cluster friendly object id with great query isolation.",
   "main": "index.js",
   "scripts": {
