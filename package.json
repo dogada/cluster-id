@@ -7,7 +7,7 @@
     "test": "jest src/",
     "test:watch": "jest --watch src/",
     "prebuild": "rm -rf ./build",
-    "build": "buble src/ -o build/ && cp package.json ./build && echo",
+    "build": "buble src/ -o build/ && cp package.json README.md ./build && echo",
     "deploy": "pnpm publish build/",
     "preversion": "pnpm test",
     "version": "pnpm run build",
